@@ -11,6 +11,11 @@
 		0AAA64EF2BD6BE5600E2E0AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA64EE2BD6BE5600E2E0AC /* ContentView.swift */; };
 		0AAA64F12BD6BE5800E2E0AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA64F02BD6BE5800E2E0AC /* Assets.xcassets */; };
 		0AAA64F42BD6BE5800E2E0AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA64F32BD6BE5800E2E0AC /* Preview Assets.xcassets */; };
+		0AAA65012BD6D65200E2E0AC /* DS-DIGIB.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA64FD2BD6D65200E2E0AC /* DS-DIGIB.TTF */; };
+		0AAA65062BD6D93A00E2E0AC /* DateFormatStyle+Timezone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA65052BD6D93A00E2E0AC /* DateFormatStyle+Timezone.swift */; };
+		0AAA65082BD6D98A00E2E0AC /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA65072BD6D98A00E2E0AC /* CustomFont.swift */; };
+		0AAA650B2BD6E90100E2E0AC /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0AAA650A2BD6E90100E2E0AC /* alarm.mp3 */; };
+		0AAA650D2BD6ED1F00E2E0AC /* ShakeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA650C2BD6ED1F00E2E0AC /* ShakeAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		0AAA64EE2BD6BE5600E2E0AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AAA64F02BD6BE5800E2E0AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AAA64F32BD6BE5800E2E0AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0AAA64FD2BD6D65200E2E0AC /* DS-DIGIB.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGIB.TTF"; sourceTree = "<group>"; };
+		0AAA65032BD6D6A600E2E0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0AAA65052BD6D93A00E2E0AC /* DateFormatStyle+Timezone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatStyle+Timezone.swift"; sourceTree = "<group>"; };
+		0AAA65072BD6D98A00E2E0AC /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		0AAA650A2BD6E90100E2E0AC /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		0AAA650C2BD6ED1F00E2E0AC /* ShakeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +62,11 @@
 		0AAA64EB2BD6BE5600E2E0AC /* Tempo */ = {
 			isa = PBXGroup;
 			children = (
+				0AAA65092BD6E8EE00E2E0AC /* Resources */,
+				0AAA65042BD6D91F00E2E0AC /* Core */,
+				0AAA65032BD6D6A600E2E0AC /* Info.plist */,
 				0AAA64EC2BD6BE5600E2E0AC /* TempoApp.swift */,
 				0AAA64EE2BD6BE5600E2E0AC /* ContentView.swift */,
-				0AAA64F02BD6BE5800E2E0AC /* Assets.xcassets */,
 				0AAA64F22BD6BE5800E2E0AC /* Preview Content */,
 			);
 			path = Tempo;
@@ -65,6 +78,34 @@
 				0AAA64F32BD6BE5800E2E0AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0AAA64FA2BD6D63E00E2E0AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0AAA64FD2BD6D65200E2E0AC /* DS-DIGIB.TTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0AAA65042BD6D91F00E2E0AC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0AAA65052BD6D93A00E2E0AC /* DateFormatStyle+Timezone.swift */,
+				0AAA65072BD6D98A00E2E0AC /* CustomFont.swift */,
+				0AAA650C2BD6ED1F00E2E0AC /* ShakeAnimation.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0AAA65092BD6E8EE00E2E0AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AAA650A2BD6E90100E2E0AC /* alarm.mp3 */,
+				0AAA64F02BD6BE5800E2E0AC /* Assets.xcassets */,
+				0AAA64FA2BD6D63E00E2E0AC /* Fonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +166,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AAA650B2BD6E90100E2E0AC /* alarm.mp3 in Resources */,
+				0AAA65012BD6D65200E2E0AC /* DS-DIGIB.TTF in Resources */,
 				0AAA64F42BD6BE5800E2E0AC /* Preview Assets.xcassets in Resources */,
 				0AAA64F12BD6BE5800E2E0AC /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +180,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AAA650D2BD6ED1F00E2E0AC /* ShakeAnimation.swift in Sources */,
 				0AAA64EF2BD6BE5600E2E0AC /* ContentView.swift in Sources */,
+				0AAA65082BD6D98A00E2E0AC /* CustomFont.swift in Sources */,
+				0AAA65062BD6D93A00E2E0AC /* DateFormatStyle+Timezone.swift in Sources */,
 				0AAA64ED2BD6BE5600E2E0AC /* TempoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +321,7 @@
 				DEVELOPMENT_TEAM = AD62P27W7L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tempo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +351,7 @@
 				DEVELOPMENT_TEAM = AD62P27W7L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tempo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
